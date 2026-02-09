@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renace Hogar - Revitalizando la España Vaciada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.6)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-blue-900 p-2 rounded-lg text-white">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <span class="text-xl font-bold text-blue-900 tracking-tight">RENACE HOGAR</span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+                    <a href="#oportunidad" class="hover:text-blue-900">Oportunidad</a>
+                    <a href="#modelo" class="hover:text-blue-900">Modelo Akiya</a>
+                    <a href="#viabilidad" class="hover:text-blue-900">Viabilidad</a>
+                    <a href="#contacto" class="bg-blue-900 text-white px-4 py-2 rounded-full hover:bg-blue-800 transition">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Revitalizando España</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light italic">"Importando el Modelo Akiya para una solución asequible a la crisis de vivienda y la despoblación rural."</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#modelo" class="bg-white text-blue-900 px-8 py-3 rounded-full font-bold hover:bg-slate-100 transition">Ver Proyecto</a>
+                <a href="#oportunidad" class="border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white/10 transition">La Oportunidad</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Oportunidad -->
+    <section id="oportunidad" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-blue-900 font-bold text-sm uppercase tracking-widest mb-2">01. La Oportunidad</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6">El contraste de la vivienda en España</h3>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Mientras los jóvenes luchan por acceder a su primer hogar en las ciudades, existen más de <span class="text-blue-900 font-bold">3,4 millones de viviendas vacías</span> en la "España Vaciada", muchas de ellas en estado de abandono técnico.
+                    </p>
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full text-blue-900"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                            <h4 class="font-bold text-xl">Potencial de Crecimiento</h4>
+                            <p class="text-slate-500 text-sm">Aprovechamos activos infravalorados para crear valor real.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Casa rural en ruinas para rehabilitar" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modelo Akiya -->
+    <section id="modelo" class="py-20 px-4 bg-slate-50">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">¿Qué es el Modelo Akiya?</h2>
+            <p class="text-lg text-slate-600">Inspirado en el éxito japonés, adaptado al mercado español.</p>
+        </div>
+        
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+            <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                <div class="text-blue-900 text-4xl mb-6"><i class="fas fa-search-location"></i></div>
+                <h4 class="text-xl font-bold mb-4">Adquisición</h4>
+                <p class="text-slate-500">Localización y compra de viviendas en ruinas a precios simbólicos o muy bajos.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                <div class="text-blue-900 text-4xl mb-6"><i class="fas fa-tools"></i></div>
+                <h4 class="text-xl font-bold mb-4">Rehabilitación</h4>
+                <p class="text-slate-500">Reforma integral estandarizada mediante sistemas modulares eficientes.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                <div class="text-blue-900 text-4xl mb-6"><i class="fas fa-key"></i></div>
+                <h4 class="text-xl font-bold mb-4">Venta Final</h4>
+                <p class="text-slate-500">Hogares listos para vivir un 40% más baratos que en el mercado urbano.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Público Objetivo -->
+    <section class="py-20 px-4 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">¿A quién vendemos?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border border-white/20 p-6 rounded-xl bg-white/5">
+                    <h4 class="font-bold text-xl mb-3"><i class="fas fa-laptop-code mr-2"></i> Nómadas Digitales</h4>
+                    <p class="text-blue-100">Profesionales que huyen de los altos alquileres buscando calidad de vida y conectividad.</p>
+                </div>
+                <div class="border border-white/20 p-6 rounded-xl bg-white/5">
+                    <h4 class="font-bold text-xl mb-3"><i class="fas fa-user-graduate mr-2"></i> Primeros Compradores</h4>
+                    <p class="text-blue-100">Jóvenes (25-40 años) que buscan una propiedad propia sin una deuda perpetua.</p>
+                </div>
+                <div class="border border-white/20 p-6 rounded-xl bg-white/5">
+                    <h4 class="font-bold text-xl mb-3"><i class="fas fa-leaf mr-2"></i> Eco-Conscientes</h4>
+                    <p class="text-blue-100">Familias que valoran la sostenibilidad, el entorno natural y el impacto social positivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Viabilidad y Gráficos -->
+    <section id="viabilidad" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Viabilidad Económica</h2>
+                <p class="text-lg text-slate-600">Hacemos la propiedad accesible optimizando cada paso del proceso.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-slate-50 p-6 rounded-2xl shadow-inner">
+                    <h4 class="text-center font-bold mb-4 text-slate-700">Precio Medio Vivienda 80m²</h4>
+                    <canvas id="priceChart" width="400" height="300"></canvas>
+                </div>
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-blue-900 mb-4">Estructura de Costes</h4>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-slate-600">
+                            <thead class="bg-blue-900 text-white">
+                                <tr>
+                                    <th class="p-3 rounded-tl-lg">Concepto</th>
+                                    <th class="p-3">Coste</th>
+                                    <th class="p-3 rounded-tr-lg">%</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200">
+                                <tr><td class="p-3">Adquisición</td><td class="p-3 font-bold">15.000 €</td><td class="p-3">21%</td></tr>
+                                <tr><td class="p-3">Reforma Integral</td><td class="p-3 font-bold">45.000 €</td><td class="p-3">64%</td></tr>
+                                <tr><td class="p-3">Legales y Licencias</td><td class="p-3 font-bold">5.000 €</td><td class="p-3">7%</td></tr>
+                                <tr><td class="p-3">Marketing</td><td class="p-3 font-bold">5.000 €</td><td class="p-3">7%</td></tr>
+                            </tbody>
+                            <tfoot class="bg-blue-50 font-bold">
+                                <tr><td class="p-3">Total Inversión</td><td class="p-3 text-blue-900">70.000 €</td><td class="p-3">100%</td></tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="bg-blue-900 text-white p-6 rounded-xl flex justify-between items-center">
+                        <div>
+                            <p class="text-sm opacity-80 uppercase font-bold tracking-tighter">PVP Objetivo</p>
+                            <p class="text-3xl font-bold">95.000 €</p>
+                        </div>
+                        <div class="text-right border-l border-white/20 pl-6">
+                            <p class="text-sm opacity-80 uppercase font-bold tracking-tighter">Margen Bruto</p>
+                            <p class="text-2xl font-bold text-green-400">35%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing y Storytelling -->
+    <section class="py-20 px-4 bg-slate-100">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+             <div class="order-2 md:order-1">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Interior moderno rehabilitado" class="rounded-2xl shadow-xl">
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-3xl font-bold text-blue-900 mb-6">Marketing Emocional</h2>
+                <p class="text-slate-600 mb-6 italic text-lg">"No solo vendemos metros cuadrados, vendemos un nuevo estilo de vida."</p>
+                <ul class="space-y-4">
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-camera-retro text-blue-900"></i>
+                        <span><strong>Documentación:</strong> Storytelling en redes sociales del proceso de reforma.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-vr-cardboard text-blue-900"></i>
+                        <span><strong>Tecnología:</strong> Tours 3D y Realidad Virtual antes de empezar la obra.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-hands-helping text-blue-900"></i>
+                        <span><strong>Alianzas:</strong> Cooperación directa con Ayuntamientos rurales.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sociedad Limitada -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="inline-block bg-blue-100 text-blue-900 px-4 py-2 rounded-full font-bold mb-6">Forma Jurídica: S.L.</div>
+            <h2 class="text-3xl font-bold mb-8">Estructura Profesional</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 bg-slate-50 rounded-lg">
+                    <p class="text-sm font-bold text-blue-900 uppercase mb-1">Responsabilidad</p>
+                    <p class="text-xs text-slate-500">Patrimonio personal protegido.</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-lg">
+                    <p class="text-sm font-bold text-blue-900 uppercase mb-1">Fiscalidad</p>
+                    <p class="text-xs text-slate-500">Deducción de IVA en reformas.</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-lg">
+                    <p class="text-sm font-bold text-blue-900 uppercase mb-1">Escalabilidad</p>
+                    <p class="text-xs text-slate-500">Entrada ágil de inversores.</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-lg">
+                    <p class="text-sm font-bold text-blue-900 uppercase mb-1">Imagen</p>
+                    <p class="text-xs text-slate-500">Seriedad ante Ayuntamientos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-blue-900 text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="flex items-center justify-center space-x-2 mb-8">
+                <div class="bg-white p-2 rounded-lg text-blue-900">
+                    <i class="fas fa-home"></i>
+                </div>
+                <span class="text-3xl font-bold">RENACE HOGAR</span>
+            </div>
+            <h3 class="text-2xl font-light mb-8">¿Alguna pregunta? Ayúdanos a reconstruir la historia de nuestros pueblos.</h3>
+            
+            <div class="flex justify-center space-x-6 mb-12">
+                <a href="#" class="hover:text-blue-300 text-2xl"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue-300 text-2xl"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="hover:text-blue-300 text-2xl"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <div class="text-blue-300 text-sm">
+                <p>&copy; 2024 Renace Hogar. Plan de Empresa IPE2 - Juan José Ortega Portales.</p>
+                <p class="mt-2">www.renacehogar.es | @renacehogar_es</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gráfico de Precios
+        const ctx = document.getElementById('priceChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Obra Nueva (Ciudad)', 'Inmobiliaria Rural Trad.', 'Renace Hogar (Akiya)'],
+                datasets: [{
+                    label: 'Precio Medio (€)',
+                    data: [240000, 180000, 95000],
+                    backgroundColor: [
+                        'rgba(30, 58, 138, 0.4)',
+                        'rgba(30, 58, 138, 0.6)',
+                        'rgba(30, 58, 138, 0.9)'
+                    ],
+                    borderColor: [
+                        '#1e3a8a',
+                        '#1e3a8a',
+                        '#1e3a8a'
+                    ],
+                    borderWidth: 1,
+                    borderRadius: 10
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return value.toLocaleString() + ' €';
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
